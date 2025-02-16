@@ -9,7 +9,7 @@ var promiseObject = new Promise((resolve, reject) => {
     resolve({ok:false});
   });
   
-  //Success Data
+  Success Data
   
   promiseObject
     .then((successdata) => {
