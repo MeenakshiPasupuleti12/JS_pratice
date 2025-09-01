@@ -213,3 +213,102 @@ Try small data cleaning projects using Excel or Python.
 
 Prepare 1-2 real or mock projects to discuss in interviews.
 
+9. Advanced (But Beginner-Friendly) Questions
+Q34: What is the difference between OLAP and OLTP?
+
+A:
+
+OLTP (Online Transaction Processing): Used for day-to-day operations (e.g., banking).
+
+OLAP (Online Analytical Processing): Used for complex analysis and decision-making (e.g., reporting, BI dashboards).
+
+Q35: What is ETL in Data Analytics?
+
+A:
+
+Extract data from source
+
+Transform it into the right format
+
+Load it into a data warehouse
+
+🐍 10. Python for Data Analysis
+Q36: What Python libraries are used for data analysis?
+
+A:
+
+Pandas: Data manipulation
+
+NumPy: Numerical operations
+
+Matplotlib / Seaborn: Visualization
+
+Scikit-learn: Machine learning (optional for beginners)
+
+Q37: How do you read a CSV file using Pandas?
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+print(df.head())
+
+Q38: How do you handle missing values in Python?
+df.isnull().sum()                  # Check for nulls
+df.dropna()                        # Drop rows with nulls
+df.fillna(0)                       # Fill nulls with 0
+df['age'].fillna(df['age'].mean())  # Fill with mean
+
+📊 11. Power BI / Tableau Questions
+Q39: What is Power BI?
+
+A: Power BI is a Microsoft tool used to visualize data through dashboards and reports. It connects to various data sources and allows users to explore data interactively.
+
+Q40: Difference between a dashboard and a report in Power BI?
+
+A:
+
+Report: Multi-page and detailed
+
+Dashboard: Single-page summary view using visuals from one or more reports
+
+Q41: What is a slicer in Power BI?
+
+A: A slicer is a visual filter that allows users to select data and dynamically update charts on the dashboard.
+
+💡 12. Real-World Scenarios
+Q42: You have customer data with thousands of duplicate rows. What will you do?
+
+A:
+
+Use Remove Duplicates in Excel or df.drop_duplicates() in Python
+
+Ensure keys (like ID or email) are consistent
+
+Validate before and after with record counts
+
+Q43: A manager wants to know monthly sales trends. How would you help?
+
+A:
+
+Load sales data
+
+Group by month and calculate totals
+
+Visualize using a line chart (in Excel, Power BI, or Tableau)
+
+Present key trends (e.g., seasonal peaks, drops)
+
+⚙️ 13. Additional SQL Queries (for Practice)
+Q44: Find employees with salary more than the average salary.
+SELECT * FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+
+Q45: Count employees in each department.
+SELECT department, COUNT(*) AS total_employees
+FROM employees
+GROUP BY department;
+
+Q46: Find the top 3 highest salaries.
+SELECT DISTINCT salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 3;
