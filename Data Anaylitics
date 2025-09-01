@@ -1,0 +1,214 @@
+==================================================
+DATA ANALYTICS INTERVIEW QUESTIONS & ANSWERS (FRESHERS)
+==================================================
+
+-------------------------------
+1. BASIC CONCEPTUAL QUESTIONS
+-------------------------------
+
+Q1: What is Data Analytics?
+A: Data Analytics is the process of collecting, organizing, analyzing, and interpreting data to uncover patterns and insights for informed decision-making.
+
+Q2: What are the types of Data Analytics?
+A:
+- Descriptive Analytics: What happened?
+- Diagnostic Analytics: Why did it happen?
+- Predictive Analytics: What will happen?
+- Prescriptive Analytics: What should be done?
+
+Q3: What is the difference between structured and unstructured data?
+A:
+- Structured Data: Organized in rows and columns, stored in databases.
+- Unstructured Data: No predefined structure (e.g., images, videos, emails).
+
+Q4: What is the difference between Data Analytics and Data Science?
+A:
+- Data Analytics focuses on analyzing existing data.
+- Data Science involves data collection, cleaning, analysis, and building predictive models using ML and AI.
+
+---------------------
+2. EXCEL QUESTIONS
+---------------------
+
+Q5: What is a Pivot Table?
+A: A Pivot Table is a tool in Excel that summarizes large datasets, helping analyze data by categories with automatic aggregation.
+
+Q6: What is the difference between COUNT, COUNTA, and COUNTIF?
+A:
+- COUNT: Counts numeric cells.
+- COUNTA: Counts all non-empty cells.
+- COUNTIF: Counts cells based on a condition.
+
+Q7: How does VLOOKUP work?
+A: VLOOKUP searches for a value in the first column of a table and returns a corresponding value from a specified column in the same row.
+
+Example:
+=VLOOKUP(102, A2:B10, 2, FALSE)
+
+Q8: What is Conditional Formatting?
+A: It highlights cells with specific values or conditions (e.g., coloring all cells greater than 100 in green).
+
+Q9: How to remove duplicates in Excel?
+A:
+- Select the data range.
+- Go to Data > Remove Duplicates.
+- Choose columns to check.
+
+---------------------
+3. SQL QUESTIONS
+---------------------
+
+Q10: What is SQL?
+A: SQL (Structured Query Language) is used to interact with databases by writing queries to retrieve, insert, update, or delete data.
+
+Q11: What are JOINS in SQL?
+A:
+- INNER JOIN: Returns matching rows from both tables.
+- LEFT JOIN: Returns all rows from the left table and matching rows from the right.
+- RIGHT JOIN: Returns all rows from the right table and matching from the left.
+- FULL OUTER JOIN: Returns all rows when there's a match in either table.
+
+Q12: Difference between WHERE and HAVING?
+A:
+- WHERE filters rows before grouping.
+- HAVING filters groups after aggregation.
+
+Q13: SQL Query to find the second highest salary:
+```sql
+SELECT MAX(salary)
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
+Q14: SQL Query to find duplicate records:
+
+SELECT name, COUNT(*)
+FROM employees
+GROUP BY name
+HAVING COUNT(*) > 1;
+
+
+Q15: SQL Query to get total salary by department:
+
+SELECT department, SUM(salary)
+FROM employees
+GROUP BY department;
+
+
+Q16: SQL Query to fetch only unique values:
+
+SELECT DISTINCT department FROM employees;
+
+
+Q17: SQL Query to sort data in descending order:
+
+SELECT * FROM employees ORDER BY salary DESC;
+
+
+STATISTICS & MATH
+
+Q18: What is the mean, median, and mode?
+A:
+
+Mean: Average of data values.
+
+Median: Middle value when data is sorted.
+
+Mode: Most frequently occurring value.
+
+Q19: What is standard deviation?
+A: It measures how spread out the numbers are from the mean.
+
+Q20: What is correlation?
+A: Correlation measures the relationship between two variables. It ranges from -1 (negative) to +1 (positive). Zero means no correlation.
+
+Q21: What is a p-value?
+A: The p-value measures the probability that the results of your test occurred by chance. A p-value < 0.05 typically indicates statistical significance.
+
+DATA VISUALIZATION & TOOLS
+
+Q22: What are the tools used for Data Analytics?
+A:
+
+Excel
+
+SQL
+
+Power BI / Tableau
+
+Python (Pandas, NumPy, Matplotlib)
+
+R
+
+Q23: What charts are best for comparison?
+A:
+
+Bar Chart: Comparing categories
+
+Line Chart: Trends over time
+
+Pie Chart: Proportions of a whole
+
+Histogram: Frequency distribution
+
+Q24: What is a dashboard?
+A: A dashboard is a visual interface that shows key metrics and data summaries in charts, graphs, and tables, often updated in real-time.
+
+SCENARIO / CASE QUESTIONS
+
+Q25: How would you handle missing data?
+A:
+
+Remove rows/columns with many missing values.
+
+Replace with mean, median, or mode.
+
+Use predictive models for imputation.
+
+Q26: How do you clean messy data?
+A:
+
+Remove duplicates
+
+Handle missing values
+
+Standardize formats (dates, currencies)
+
+Validate and correct outliers
+
+Q27: What would you do if a dataset has inconsistent date formats?
+A: Standardize all dates into a common format using Excel functions or date parsing in Python/Pandas.
+
+Q28: How do you deal with outliers?
+A:
+
+Identify using statistical methods (IQR, Z-score)
+
+Decide whether to remove or transform them based on business context
+
+BEHAVIORAL / HR QUESTIONS
+
+Q29: Tell me about yourself.
+A: I'm a recent graduate in [Your Degree] with a strong interest in data analytics. I have worked on projects using Excel, SQL, and Power BI, and I enjoy turning raw data into actionable insights.
+
+Q30: Why do you want to be a Data Analyst?
+A: I enjoy working with data to uncover insights and solve real-world problems. Data Analytics allows me to combine technical and business skills.
+
+Q31: Tell me about a project you worked on.
+A: I worked on a college project analyzing online sales data. I used Excel to clean the data, SQL to query for patterns, and Power BI to create dashboards showing monthly sales and customer segments.
+
+Q32: What are your strengths?
+A: Analytical thinking, attention to detail, and problem-solving skills.
+
+Q33: What are your weaknesses?
+A: Sometimes I spend too much time perfecting details, but I’m learning to manage time more efficiently.
+
+FINAL TIPS
+
+Practice writing SQL queries daily.
+
+Get comfortable with Excel functions and charts.
+
+Learn basics of Power BI or Tableau.
+
+Try small data cleaning projects using Excel or Python.
+
+Prepare 1-2 real or mock projects to discuss in interviews.
